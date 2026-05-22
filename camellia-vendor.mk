@@ -1106,6 +1106,7 @@ PRODUCT_PACKAGES += \
     libsdk_sr \
     libsensor_custom \
     libsfplugin_ccodec_utils-v31 \
+    libstagefright_bufferqueue_helper-v33 \
     libstereoinfoaccessor_vsdof \
     libstorage_otp \
     libsysenv \

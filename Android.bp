@@ -15663,7 +15663,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libcodec2_hidl@1.0-v31",
-    check_elf_files: false,
     owner: "xiaomi",
     strip: {
         none: true,
@@ -15691,7 +15690,7 @@ cc_prebuilt_library_shared {
                 "libstagefright_bufferpool@2.0.1",
                 "libui-v34",
                 "libutils",
-                "libstagefright_bufferqueue_helper",
+                "libstagefright_bufferqueue_helper-v33",
                 "libcodec2_hidl_plugin-v31",
                 "libc++",
                 "libc",
@@ -15708,7 +15707,6 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libcodec2_hidl@1.1-v31",
     owner: "xiaomi",
-    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -15737,7 +15735,7 @@ cc_prebuilt_library_shared {
                 "libstagefright_bufferpool@2.0.1",
                 "libui-v34",
                 "libutils",
-                "libstagefright_bufferqueue_helper",
+                "libstagefright_bufferqueue_helper-v33",
                 "libcodec2_hidl_plugin-v31",
                 "libc++",
                 "libc",
@@ -15754,7 +15752,6 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libcodec2_hidl@1.2-v31",
     owner: "xiaomi",
-    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -15785,7 +15782,7 @@ cc_prebuilt_library_shared {
                 "libstagefright_bufferpool@2.0.1",
                 "libui-v34",
                 "libutils",
-                "libstagefright_bufferqueue_helper",
+                "libstagefright_bufferqueue_helper-v33",
                 "libcodec2_hidl_plugin-v31",
                 "libc++",
                 "libc",
@@ -21019,6 +21016,41 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libstagefright_foundation-v33",
                 "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libstagefright_bufferqueue_helper-v33",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libstagefright_bufferqueue_helper-v33.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libhidlbase",
+                "libhidlmemory",
+                "liblog",
+                "libstagefright_foundation",
+                "libui",
+                "libutils",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libgui",
                 "libc++",
                 "libc",
                 "libm",
